@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cost": {
+      "type": "decimal"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "modules": {
+      "via": "course",
+      "collection": "module"
+    },
+    "teacher": {
+      "model": "teacher",
+      "via": "courses_assigned"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "Principiante",
+        "Intermedio",
+        "Experto"
+      ]
+    },
+    "hoursOfContent": {
+      "type": "decimal"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "reviews": {
+      "collection": "review",
+      "via": "course"
+    },
+    "learningObjectives": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui-component.list"
+    },
+    "requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui-component.list"
+    },
+    "scope": {
+      "type": "richtext"
+    },
+    "shortDescription": {
+      "type": "string"
+    }
+  }
+}

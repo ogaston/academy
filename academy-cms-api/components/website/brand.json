@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_website_brands",
+  "info": {
+    "name": "brand",
+    "icon": "compass"
+  },
+  "options": {},
+  "attributes": {
+    "imageUrl": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

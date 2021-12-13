@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers",
+  "info": {
+    "name": "Teacher",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "professionalTitle": {
+      "type": "string"
+    },
+    "courses": {
+      "collection": "course"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "courses_assigned": {
+      "via": "teacher",
+      "collection": "course"
+    }
+  }
+}

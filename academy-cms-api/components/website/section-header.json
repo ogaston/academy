@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_website_section_headers",
+  "info": {
+    "name": "SectionHeader",
+    "icon": "palette"
+  },
+  "options": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

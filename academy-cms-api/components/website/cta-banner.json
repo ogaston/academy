@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_website_cta_banners",
+  "info": {
+    "name": "CtaBanner",
+    "icon": "grip-lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui-component.button"
+    }
+  }
+}

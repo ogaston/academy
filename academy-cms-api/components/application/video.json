@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_application_videos",
+  "info": {
+    "name": "Video",
+    "icon": "photo-video"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "mediaUrl": {
+      "type": "text"
+    },
+    "individualCost": {
+      "type": "decimal"
+    }
+  }
+}

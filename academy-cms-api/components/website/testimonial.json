@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_website_testimonials",
+  "info": {
+    "name": "testimonial",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "rate": {
+      "type": "integer",
+      "max": 10,
+      "min": 1,
+      "default": 10
+    }
+  }
+}

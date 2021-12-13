@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modules",
+  "info": {
+    "name": "Module",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "course": {
+      "via": "modules",
+      "model": "course"
+    },
+    "videos": {
+      "collection": "video"
+    },
+    "contents": {
+      "via": "module",
+      "collection": "content"
+    }
+  }
+}

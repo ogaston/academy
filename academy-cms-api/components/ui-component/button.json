@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ui_component_buttons",
+  "info": {
+    "name": "Button",
+    "icon": "mouse-pointer"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "text"
+    },
+    "variant": {
+      "type": "string"
+    }
+  }
+}

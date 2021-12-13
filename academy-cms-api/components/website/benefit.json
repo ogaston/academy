@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_website_benefits",
+  "info": {
+    "name": "benefit",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui-component.button"
+    }
+  }
+}

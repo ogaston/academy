@@ -1,0 +1,67 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "name": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string"
+    },
+    "mainDescription": {
+      "type": "text"
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "website.benefit"
+    },
+    "mainCtaBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website.cta-banner"
+    },
+    "videoSectionHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website.section-header"
+    },
+    "pinnedVideos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "application.video"
+    },
+    "testimonialSectionHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website.section-header"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "website.testimonial"
+    },
+    "endorsedBy": {
+      "type": "component",
+      "repeatable": true,
+      "component": "website.brand"
+    },
+    "promoBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website.cta-banner"
+    },
+    "imagesSlider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui-component.slider"
+    }
+  }
+}

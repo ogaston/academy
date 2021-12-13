@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "name": "Content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "image",
+        "blog"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "lengthOfMinutes": {
+      "type": "integer"
+    },
+    "isPublic": {
+      "type": "boolean",
+      "default": false
+    },
+    "module": {
+      "via": "contents",
+      "model": "module"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui-component.list"
+    }
+  }
+}
